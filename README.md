@@ -24,7 +24,28 @@ After filtering and preprocessing data, we recommend to use GPU with EpicPred.
   * score : binding score (0~1)
   * label : Eptiope information
 * 3. Encoded vector for each each patient/sample TCR data (CDR3)
-  * npy file 
+  * npy file
+  * freq='frequency' ## weight of abundance column name in each dataset
+  * j
+frequency_or_not=0 ## frequency weight
+length_or_not=0 ## 1 length로 자르기
+length=100
+vector_name='vector' # vector_raw
+label_name='label' # label2 , label_raw
+score_name='score' #score2 ## clustering, score_raw ## raw_clustering
+dataset_name='tutorial'
+save_inner=0
+save_outer=0
+save_outer_name='outer_attention'
+save_inner_name='inner_attention'
+save_score_name='label' #score2 ## clustering, score_raw ## raw_clustering
+lab='WHO_label'
+elements=['Severe','Healthy']
+sample_name_col='sample'
+metadata_dir = 'github/tutorial_data/metadata/'
+output_dir='github/tutorial_data/output/'+dataset_name+'/'
+output_dir1='github/tutorial_data/output1/'+dataset_name+'/'
+sample_info_dir='github/tutorial_data/metadata/'+dataset_name+'/'
 # Training EpicPred
 
 # Predictions with EpicPred
