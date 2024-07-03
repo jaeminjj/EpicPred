@@ -13,12 +13,13 @@ cancer subtypes and COVID-19 severity levels.
 
 # Usage
 After filtering and preprocessing data, we recommend to use GPU with EpicPred.
-# Input data (metadata)
-* meta data has 3 columns
+# Input data for training and predicting with EpicPred 
+* 1. Meta data : composed with 3 columns
   * sample
   * WHO_label
   * patient
-* 
+* 2. TCR label information for each patient/sample data
+* 3. Encoded vector for each each patient/sample TCR data (CDR3)
 # Clustering with Embedding vectors from encoder model
 
 # Training EpicPred
