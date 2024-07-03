@@ -1,6 +1,13 @@
-# TCR-EpiSev: Attention-Based Multiple Instance Learning Approach for Epitope-Driven Severity Prediction
+# EpicPred: attention-based multiple instance learning for predicting phenotypes driven by epitope binding
+TCRs
 
-The model effectively examines TCR sequences to precisely identify binding epitopes and how they associate with ones severity level. TCR-EpiSev utilizes a BERT-based language model for predicting TCR sequence specific epitopes. Subsequently, we applied multiple instance learning (MIL) using the predicted epitopes for predicting severity. To overcome the lack of publicly known TCR-epitope interactions, we applied the Open set Recognition method to effectively remove out relatively uninformative TCRs, which significantly improved the severity prediction accuracy.
+Correctly identifying TCR binding epitopes is important to both understand their underlying biological
+mechanism in association to some phenotype and develop T-cell mediated immunotherapy treatments. Although the
+importance of the CDR3 region in TCRs for epitope recognition is well recognized, methods for profiling their interactions
+in association to a certain disease or phenotype remains less studied. We developed EpicPred to identify phenotype specific
+TCR-epitope interactions. EpicPred first predicts and removes unlikely interactions to reduce false positives using the
+Open-set Recognition. Subsequently, multiple instance learning was used to identify TCR-epitope interactions specific to
+cancer subtypes and COVID-19 severity levels.
 
 
 ![workflow](https://github.com/jaeminjj/TCR-EpiSev/blob/main/images/Workflow.png)
