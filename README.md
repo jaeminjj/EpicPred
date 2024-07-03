@@ -10,3 +10,12 @@ cancer subtypes and COVID-19 severity levels.
 
 
 ![workflow](https://github.com/jaeminjj/TCR-EpiSev/blob/main/images/Workflow.png)
+
+# Usage
+After filtering and preprocessing data, we recommend to use GPU with EpicPred.
+
+# Clustering with Embedding vectors from encoder model
+
+# Training EpicPred
+
+# Predictions with EpicPred
