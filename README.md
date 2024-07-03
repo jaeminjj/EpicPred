@@ -1,5 +1,4 @@
-# EpicPred: attention-based multiple instance learning for predicting phenotypes driven by epitope binding
-TCRs
+# EpicPred: attention-based multiple instance learning for predicting phenotypes driven by epitope binding TCRs
 
 Correctly identifying TCR binding epitopes is important to both understand their underlying biological
 mechanism in association to some phenotype and develop T-cell mediated immunotherapy treatments. Although the
