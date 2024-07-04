@@ -17,8 +17,8 @@ After filtering and preprocessing data, we recommend to use GPU with EpicPred.
 # Input data for training and predicting with EpicPred 
 * 1. Meta data : composed with 3 columns
   * sample
-  * WHO_label
-  * patient
+  * WHO_label (Ex, Severe, Healthy, cancer)
+  * patient (same with input patient TCR information csv file)
 * 2. TCR label information for each patient/sample data with 3 columns
   * cell barcode
   * score : binding score (0~1)
@@ -26,18 +26,17 @@ After filtering and preprocessing data, we recommend to use GPU with EpicPred.
 * 3. Encoded vector for each each patient/sample TCR data (CDR3)
   * npy file
   * freq='frequency' ## weight of abundance column name in each dataset
-  * j
-frequency_or_not=0 ## frequency weight
-length_or_not=0 ## 1 length로 자르기
-length=100
-vector_name='vector' # vector_raw
-label_name='label' # label2 , label_raw
-score_name='score' #score2 ## clustering, score_raw ## raw_clustering
-dataset_name='tutorial'
-save_inner=0
-save_outer=0
-save_outer_name='outer_attention'
-save_inner_name='inner_attention'
+ 
+* 4. parameters for EpicPred
+  * frequency_or_not : using TCR reads or ratio for weight (0,1)
+  * length_or_not : using length parameter to remove TCRs for equal comparison (0,1)
+  * length : fixed length or TCRs (int)
+  * vector_name : folder name of embedded TCR files
+  * label_name : folder name of label information as clustering information for each TCR and binding score
+  * dataset_name='tutorial' : folder name of dataset , for each datset you should input vector folder and label folder
+  * save inner, saver outer : saving attention score files (0,1)
+* save_outer_name='outer_attention'
+ * save_inner_name='inner_attention'
 save_score_name='label' #score2 ## clustering, score_raw ## raw_clustering
 lab='WHO_label'
 elements=['Severe','Healthy']
