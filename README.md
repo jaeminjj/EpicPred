@@ -13,8 +13,18 @@ cancer subtypes and COVID-19 severity levels.
 
 # Usage
 After filtering and preprocessing data, we recommend to use GPU with EpicPred.
-# Clustering with Embedding vectors from encoder model
-# Input data for training and predicting with EpicPred 
+# Clustering with Embedding vectors from encoder model (embedding.py)
+```python
+python embedding.py --count='reads'\
+--model_dir='models'\
+--sample_data='tutorial_data/sample1.csv'\
+--sample_name='sample1'
+--CDR3='cdr3'
+--output_dir='/output/'
+--epitopes_dir='tutorial_data/epitopes.csv'
+--cluster_num=5
+```
+# Explanation using for training and predicting with EpicPred.py
 * 1. Meta data : composed with 3 columns
   * sample
   * WHO_label (Ex, Severe, Healthy, cancer)
@@ -35,16 +45,13 @@ After filtering and preprocessing data, we recommend to use GPU with EpicPred.
   * label_name : folder name of label information as clustering information for each TCR and binding score
   * dataset_name='tutorial' : folder name of dataset , for each datset you should input vector folder and label folder
   * save inner, saver outer : saving attention score files (0,1)
-* save_outer_name='outer_attention'
+ * save_outer_name='outer_attention'
  * save_inner_name='inner_attention'
-save_score_name='label' #score2 ## clustering, score_raw ## raw_clustering
-lab='WHO_label'
-elements=['Severe','Healthy']
-sample_name_col='sample'
-metadata_dir = 'github/tutorial_data/metadata/'
-output_dir='github/tutorial_data/output/'+dataset_name+'/'
-output_dir1='github/tutorial_data/output1/'+dataset_name+'/'
-sample_info_dir='github/tutorial_data/metadata/'+dataset_name+'/'
-# Training EpicPred
-
-# Predictions with EpicPred
+ * save_score_name='label'
+ *lab='WHO_label' :  label information of samples
+ * elements=['Severe','Healthy']
+ * sample_name_col='sample'
+ * metadata_dir = 'github/tutorial_data/metadata/'
+ * output_dir='github/tutorial_data/output/'+dataset_name+'/'
+ * output_dir1='github/tutorial_data/output1/'+dataset_name+'/'
+ * sample_info_dir='github/tutorial_data/metadata/'+dataset_name+'/'
