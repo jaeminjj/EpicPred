@@ -45,13 +45,13 @@ python embedding.py --count='reads'\
   * label_name : folder name of label information as clustering information for each TCR and binding score
   * dataset_name='tutorial' : folder name of dataset , for each datset you should input vector folder and label folder
   * save inner, saver outer : saving attention score files (0,1)
- * save_outer_name='outer_attention'
- * save_inner_name='inner_attention'
- * save_score_name='label'
- *lab='WHO_label' :  label information of samples
- * elements=['Severe','Healthy']
- * sample_name_col='sample'
- * metadata_dir = 'github/tutorial_data/metadata/'
- * output_dir='github/tutorial_data/output/'+dataset_name+'/'
- * output_dir1='github/tutorial_data/output1/'+dataset_name+'/'
- * sample_info_dir='github/tutorial_data/metadata/'+dataset_name+'/'
+  * save_outer_name='outer_attention'
+  * save_inner_name='inner_attention'
+  * save_score_name='label'
+  *lab='WHO_label' :  label information of samples
+  * elements=['Severe','Healthy']
+  * sample_name_col='sample'
+  * metadata_dir = 'github/tutorial_data/metadata/'
+  * output_dir='github/tutorial_data/output/'+dataset_name+'/'
+  * output_dir1='github/tutorial_data/output1/'+dataset_name+'/'
+  * sample_info_dir='github/tutorial_data/metadata/'+dataset_name+'/'
