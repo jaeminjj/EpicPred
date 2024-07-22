@@ -32,6 +32,14 @@ python embedding.py --count='reads'\
 --cluster_num=5
 ```
 # Explanation using for training and predicting with EpicPred.py
+```python
+python prediction.py \
+--metadata_dir /tutorial_data/metadata \
+--output_dir /tutorial_data/output1 \
+--input_dir /output/ --threshold 0.0 \
+--cluster_num 11
+```
+
 * 1. Meta data : composed with 3 columns
   * sample
   * WHO_label (Ex, Severe, Healthy, cancer)
