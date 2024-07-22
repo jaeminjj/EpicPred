@@ -20,6 +20,16 @@ https://huggingface.co/jaeminjj/EpicPred/tree/main
 ```
 Please put two models in model folder
 
+EpicPred environment requirements
+```python
+torch==2.3.1
+transformers==4.42.3
+sklearn==1.5.0
+pandas==1.4.4
+numpy==1.26.4
+tensorflow==2.16.2
+```
+
 # Clustering with Embedding vectors from encoder model (embedding.py)
 ```python
 python embedding.py --count='reads'\
