@@ -15,9 +15,9 @@ cancer subtypes and COVID-19 severity levels.
 After filtering and preprocessing data, we recommend to use GPU with EpicPred.
 
 Download two fine-tuned models for making Embedding vectors.
-'''python
+```python
 https://huggingface.co/jaeminjj/EpicPred/tree/main
-'''python
+```
 Please put two models in model folder
 
 # Clustering with Embedding vectors from encoder model (embedding.py)
